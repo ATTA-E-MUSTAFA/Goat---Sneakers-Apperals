@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true">
+
+    <!-- Goat Logo ImageView -->
+    <ImageView
+        android:id="@+id/ivGoatLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/GOAT_logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="24dp"
+    android:contentDescription="Goat logo"/>
+
+    <!-- Sign Up Title (Centered) -->
+    <TextView
+        android:id="@+id/tvSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/ivGoatLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Close Button -->
+    <TextView
+        android:id="@+id/tvCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"/>
+
+    <!-- First & Last Name -->
+    <EditText
+        android:id="@+id/etFirstLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First &amp; Last Name"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvSignUpTitle"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/etFirstLastName"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Email Address -->
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etFirstLastName"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/etEmailAddress"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Password (8+ Characters) -->
+    <EditText
+        android:id="@+id/etPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password (8+ Characters)"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etEmailAddress"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
+
+    <!-- Show/Hide Password -->
+    <TextView
+        android:id="@+id/tvTogglePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_alignEnd="@+id/etPasswordField"
+        android:layout_marginTop="-32dp"
+        android:layout_marginEnd="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/etPasswordField"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Sign up for exclusive promos checkbox -->
+    <CheckBox
+        android:id="@+id/cbPromosCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up for exclusive promos, popular releases and more"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_below="@+id/etPasswordField"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Sign Up Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUpAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textAllCaps="false"
+        android:layout_below="@+id/cbPromosCheckbox"
+        android:layout_marginTop="24dp"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        style="@style/CustomButtonStyle"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Privacy Policy and Terms of Service -->
+    <TextView
+        android:id="@+id/tvPrivacyTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By proceeding, you agree to the Privacy Policy and Terms of Service"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnSignUpAction"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

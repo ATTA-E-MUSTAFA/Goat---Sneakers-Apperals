@@ -1,0 +1,6 @@
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/border_box</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>
