@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Goat - Sneakers &amp;Apparels</string>
+    <string name="app_name">Goat - Sneakers &amp; Apparels</string>
+    <string name="goat_logo_desc">Goat logo</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="close">Close</string>
+    <string name="first_last_name">First &amp; Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password (8+ Characters)</string>
+    <string name="show_password">Show</string>
+    <string name="promo_signup">Sign up for exclusive promos, popular releases, and more</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="privacy_terms">By proceeding, you agree to the Privacy Policy and Terms of Service</string>
 </resources>

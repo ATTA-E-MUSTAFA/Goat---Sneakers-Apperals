@@ -1,0 +1,215 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Supreme FW24"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/search_icon"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"/>
+
+    <!-- Sneakers and Apparel Section -->
+    <LinearLayout
+        android:id="@+id/categoriesSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/searchBar"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Sneakers -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sneaker_image"
+                android:contentDescription="Sneakers"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sneakers"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Apparel -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/apparel_image"
+                android:contentDescription="Apparel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apparel"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Just Dropped Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/categoriesSection"
+        android:paddingVertical="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/justDroppedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just Dropped"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/itemsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 Items"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Sneaker List Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <!-- Item 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item1Image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/item_image_1"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/item1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dunk Low Japan QS 'What The' 2024"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/item1Image"
+                    android:layout_alignParentTop="true"
+                    android:paddingStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/item1Year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Item 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item2Image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/item_image_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/item2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zoom Kobe 5 Protro 'X-Ray'"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/item2Image"
+                    android:layout_alignParentTop="true"
+                    android:paddingStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/item2Year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more items as needed -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

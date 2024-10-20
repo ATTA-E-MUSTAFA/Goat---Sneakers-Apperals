@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="home" type="id"/>
+    <item name="styles" type="id"/>
+    <item name="search" type="id"/>
+    <item name="sell" type="id"/>
+    <item name="profile" type="id"/>
+</resources>
