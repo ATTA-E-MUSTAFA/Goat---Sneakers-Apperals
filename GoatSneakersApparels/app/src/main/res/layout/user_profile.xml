@@ -23,7 +23,7 @@
             android:contentDescription="Back"
             android:layout_gravity="start"
             android:tint="@color/black"
-            android:padding="8dp"
+            android:padding="16dp"
             tools:ignore="UseAppTint" />
 
         <!-- Title -->
@@ -47,7 +47,7 @@
             android:layout_marginBottom="16dp"
             android:contentDescription="Profile Photo"
             android:scaleType="centerCrop"
-            android:src="@drawable/profileMine"
+            android:src="@drawable/profilemine_fin"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.CircularImageView"
             android:elevation="8dp"
             android:background="@drawable/rounded_background" />
@@ -77,13 +77,7 @@
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_username"
-                        android:tint="@color/black"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="8dp"/>
+
 
                     <TextView
                         android:layout_width="0dp"
@@ -118,13 +112,7 @@
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_fullname"
-                        android:tint="@color/black"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="8dp"/>
+
 
                     <TextView
                         android:layout_width="0dp"
@@ -159,13 +147,7 @@
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_email"
-                        android:tint="@color/black"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="8dp"/>
+
 
                     <TextView
                         android:layout_width="0dp"
@@ -200,13 +182,7 @@
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_phone"
-                        android:tint="@color/black"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="8dp"/>
+
 
                     <TextView
                         android:layout_width="0dp"
@@ -241,13 +217,7 @@
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/ic_password"
-                        android:tint="@color/black"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="8dp"/>
+
 
                     <TextView
                         android:layout_width="0dp"
