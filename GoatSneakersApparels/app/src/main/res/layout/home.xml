@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
+
     <!-- Top Curved Navigation (Carousel effect) -->
     <HorizontalScrollView
         android:id="@+id/topCarousel"
