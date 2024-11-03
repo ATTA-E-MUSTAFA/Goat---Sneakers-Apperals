@@ -1,6 +1,7 @@
 # Goat---Sneakers-Apperals
 The Goat App is a platform designed for buying, selling, and discovering sneakers and apparel. It connects sneaker enthusiasts with a wide range of products, including limited-edition and rare items. The app ensures authenticity by verifying products before they are shipped to buyers.
 
+
 2. **Open in Android Studio**:  
 Open Android Studio and select "Open an existing project." Navigate to the cloned repository and open it.
 
@@ -17,6 +18,7 @@ The login screen allows users to sign in to the app using their email and passwo
 
 - **Sign Up**:  
 The signup screen enables new users to create an account by providing their details like email, password, and name.
+
 
 - **Settings**:  
 This screen allows users to change app preferences, such as notifications and privacy settings.
