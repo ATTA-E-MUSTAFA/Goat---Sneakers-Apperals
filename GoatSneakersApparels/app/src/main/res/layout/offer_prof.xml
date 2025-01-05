@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/back_arrow12"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back_arrow"
+        android:contentDescription="Back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offers"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/back_arrow12"
+        android:layout_marginTop="16dp" />
+
+    <include
+        layout="@layout/prof_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

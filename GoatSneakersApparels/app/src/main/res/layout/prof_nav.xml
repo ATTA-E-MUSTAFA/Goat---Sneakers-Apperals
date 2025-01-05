@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Buttons for Navigation -->
+    <Button
+        android:id="@+id/all_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All" />
+
+    <Button
+        android:id="@+id/sneakers_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sneakers" />
+
+    <Button
+        android:id="@+id/apparel_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apparel" />
+
+    <Button
+        android:id="@+id/accessories_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessories" />
+
+</LinearLayout>

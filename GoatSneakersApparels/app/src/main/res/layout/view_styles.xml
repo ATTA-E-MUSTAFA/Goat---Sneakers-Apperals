@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Container Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Grid Layout to display images in a 2-column grid -->
+        <GridLayout
+            android:id="@+id/imageGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Grid Item 1 -->
+            <LinearLayout
+                android:id="@+id/grid_item_1"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fashion_1"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Matches Your Style!"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Grid Item 2 -->
+            <LinearLayout
+                android:id="@+id/grid_item_2"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fashion_2"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Give You a StandOut Look"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Grid Item 3 -->
+            <LinearLayout
+                android:id="@+id/grid_item_3"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/image_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hp_img1"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion For Men"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Grid Item 4 -->
+            <LinearLayout
+                android:id="@+id/grid_item_4"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/image_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hp_img2"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wear It Like You Own it!"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Grid Item 5 -->
+            <LinearLayout
+                android:id="@+id/grid_item_5"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/image_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hp_img3"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Style for children"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Grid Item 6 -->
+            <LinearLayout
+                android:id="@+id/grid_item_6"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/image_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/jacket"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get your apperal"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>

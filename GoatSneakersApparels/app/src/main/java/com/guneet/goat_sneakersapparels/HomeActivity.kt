@@ -34,25 +34,22 @@ package com.guneet.goat_sneakersapparels
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var auth: FirebaseAuth;
+class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home)  // Your main layout file
-        val styleOption = findViewById<LinearLayout>(R.id.styleOption)
-        val loginButton = findViewById<Button>(R.id.loginButton)
-        val tvBrowse = findViewById<TextView>(R.id.tvBrowse) // Find tvBrowse TextView by ID
-        val imgModels: ImageView = findViewById(R.id.imgModels)
-        val imgSkateItems: ImageView = findViewById(R.id.imgSkateItems)
-        val additionalImage1: ImageView = findViewById(R.id.additional_image_1)
+        setContentView(R.layout.homee)  // Your main layout file
+        val styleOption = findViewById<LinearLayout>(R.id.styleOption2)
+        val tvBrowse = findViewById<TextView>(R.id.tvBrowse2) // Find tvBrowse TextView by ID
+        val imgModels: ImageView = findViewById(R.id.imgModels2)
+        val imgSkateItems: ImageView = findViewById(R.id.imgSkateItems2)
+        val additionalImage1: ImageView = findViewById(R.id.additional_image_22)
         val additionalImage2: ImageView = findViewById(R.id.additional_image_2)
 // Initialize Firebase Auth
         tvBrowse.setOnClickListener {
@@ -80,10 +77,7 @@ class MainActivity : AppCompatActivity() {
             navigateToAddToCart()
         }
         // Set click listener for "Login" button to go to LoginActivity
-        loginButton.setOnClickListener {
-            val intent = Intent(this, MyLoginActivity::class.java) // Replace with your actual LoginActivity class
-            startActivity(intent)
-        }
+
         // Home Button - Already in MainActivity, no need to navigate
         val homeTab = findViewById<LinearLayout>(R.id.home_id)
         homeTab.setOnClickListener {
@@ -129,7 +123,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun navigateToAddToCart() {
-        val intent = Intent(this@MainActivity, AddtocartActivity::class.java)
+        val intent = Intent(this@HomeActivity, AddtocartActivity::class.java)
         startActivity(intent)
     }
 }

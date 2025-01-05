@@ -5,7 +5,6 @@
     android:background="@android:color/white"
     android:padding="16dp">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,6 +103,15 @@
                 android:contentDescription="Arrow"/>
         </LinearLayout>
 
+        <!-- Static Data for Return Address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123 Fashion Street, Paris, France"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="8dp"/>
+
         <!-- Divider Line -->
         <View
             android:layout_width="match_parent"
@@ -133,6 +141,15 @@
                 android:src="@drawable/arrow_icon"
                 android:contentDescription="Arrow"/>
         </LinearLayout>
+
+        <!-- Static Data for Shipping Addresses -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="456 Market Lane, New York, USA"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="8dp"/>
 
         <!-- Divider Line -->
         <View
@@ -164,6 +181,15 @@
                 android:contentDescription="Arrow"/>
         </LinearLayout>
 
+        <!-- Static Data for Payment Methods -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visa **** 1234\nMastercard **** 5678"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="8dp"/>
+
         <!-- Divider Line -->
         <View
             android:layout_width="match_parent"
@@ -194,147 +220,16 @@
                 android:contentDescription="Arrow"/>
         </LinearLayout>
 
-        <!-- App Preferences Section -->
+        <!-- Static Data for Promo Code -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="App Preferences"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="16dp" />
-
-        <!-- Shopping From Item -->
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingVertical="16dp"
-            android:clickable="true"
-            android:background="?attr/selectableItemBackground">
+            android:text="WELCOME2024"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="8dp"/>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Shopping From"
-                android:textSize="16sp"
-                android:textColor="@android:color/black"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pakistan"
-                android:textSize="16sp"
-                android:textColor="@android:color/darker_gray"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="Arrow"/>
-        </LinearLayout>
-
-        <!-- Divider Line -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-
-        <!-- Currency Item -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingVertical="16dp"
-            android:clickable="true"
-            android:background="?attr/selectableItemBackground">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Currency"
-                android:textSize="16sp"
-                android:textColor="@android:color/black"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="USD $"
-                android:textSize="16sp"
-                android:textColor="@android:color/darker_gray"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="Arrow"/>
-        </LinearLayout>
-
-        <!-- Support Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Support"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="16dp" />
-
-        <!-- Support Item -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingVertical="16dp"
-            android:clickable="true"
-            android:background="?attr/selectableItemBackground">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Support"
-                android:textSize="16sp"
-                android:textColor="@android:color/black"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/arrow_icon"
-                android:contentDescription="Arrow"/>
-        </LinearLayout>
-
-        <!-- Divider Line -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-
-        <!-- Terms of Use Item -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingVertical="16dp"
-            android:clickable="true"
-            android:background="?attr/selectableItemBackground">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Terms of Use"
-                android:textSize="16sp"
-                android:textColor="@android:color/black"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/arrow_icon"
-                android:contentDescription="Arrow"/>
-        </LinearLayout>
-
-        <!-- Add other sections as needed -->
+        <!-- Additional sections as required... -->
 
     </LinearLayout>
 </ScrollView>

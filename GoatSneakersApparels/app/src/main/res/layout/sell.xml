@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <!-- Alias text at the top -->
+    <TextView
+        android:id="@+id/aliasText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alias_"
+        android:textColor="#9370DB"
+    android:textSize="36sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="120dp" />
+
+    <!-- Description text -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download our dedicated selling app, alias."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/aliasText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <!-- Secondary description -->
+    <TextView
+        android:id="@+id/secondaryDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell quickly with access to buyer trends, pricing data and more."
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/descriptionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Get the App button -->
+    <TextView
+        android:id="@+id/getAppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get the App"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/secondaryDescriptionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- Alias by GOAT Group -->
+    <TextView
+        android:id="@+id/goatGroupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alias by GOAT Group"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/getAppButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:padding="10dp">
+
+        <!-- Home Tab -->
+        <include
+            layout="@layout/bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+</RelativeLayout>

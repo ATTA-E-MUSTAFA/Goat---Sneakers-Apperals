@@ -48,3 +48,5 @@ Implementing features like two-factor authentication to improve security.
 - **Dark Mode**:  
 Introducing a dark theme to enhance user experience in low-light environments.
 
+backend is done using firebase and sqlite
+where the login and signup button is done on firebase authentication system

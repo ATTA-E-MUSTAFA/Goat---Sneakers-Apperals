@@ -1,30 +1,15 @@
-//package com.guneet.goat_sneakersapparels
-//
-//import android.os.Bundle
-//import androidx.appcompat.app.AppCompatActivity
-//
-//class SearchEngineActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.search_engine)  // Attach the search_engine.xml layout
-//        // You can add further logic for search functionality here if needed
-//    }
-//}
-
-
 package com.guneet.goat_sneakersapparels
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.LinearLayout
-import android.widget.TextView
 
-class SearchEngineActivity : AppCompatActivity() {
+class SellActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.search_engine)  // Attach the search_engine.xml layout
+        setContentView(R.layout.sell)  // Attach the sell.xml layout
 
         // Home Button
         val homeTab = findViewById<LinearLayout>(R.id.home_id)
@@ -40,17 +25,17 @@ class SearchEngineActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Search Button - Already in SearchEngineActivity, no need to navigate
+        // Search Button
         val searchTab = findViewById<LinearLayout>(R.id.search_id)
         searchTab.setOnClickListener {
-            // Do nothing or refresh activity, as you are already in SearchEngineActivity
+            val intent = Intent(this, SearchEngineActivity::class.java)
+            startActivity(intent)
         }
 
-        // Sell Button
+        // Sell Button - Already in SellActivity, no need to navigate
         val sellTab = findViewById<LinearLayout>(R.id.sell_id)
         sellTab.setOnClickListener {
-            val intent = Intent(this, SellActivity::class.java)
-            startActivity(intent)
+            // Do nothing or refresh activity, as you are already in SellActivity
         }
 
         // Profile Button

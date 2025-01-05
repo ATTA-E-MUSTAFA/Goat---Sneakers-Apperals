@@ -24,11 +24,22 @@
         </activity>
 
         <!-- LoginActivity declaration -->
-        <activity android:name=".LoginActivity" android:exported="true" />
+<!--        <activity android:name=".SignInActivity" android:exported="true" />-->
         <activity android:name=".SearchEngineActivity" />
-        <!-- SignUpActivity declaration -->
-        <activity android:name=".SignUpActivity" android:exported="true" />
-
+        <activity android:name=".MyLoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".OffersProfActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".OrdersProfActivity" />
+        <activity android:name=".OwnsProfActivity" />
+        <activity android:name=".WantsProfActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".StyleViewActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".StyleActivity" />
+        <activity android:name=".SellActivity" />
+        <activity android:name=".AddtocartActivity"/>
+        <activity android:name=".SignupActivity" android:exported="true" />
     </application>
 
 </manifest>
