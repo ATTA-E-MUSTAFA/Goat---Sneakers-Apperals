@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "228394691963",
+    "firebase_url": "https://goat-sneakers-and-apperals-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "goat-sneakers-and-apperals",
+    "storage_bucket": "goat-sneakers-and-apperals.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228394691963:android:c55e8e278f3fc0a9a421de",
+        "android_client_info": {
+          "package_name": "com.guneet.goat_sneakersapparels"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDVWrwEM7JKjNw70tq2lFT_IoAQ7zBM1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

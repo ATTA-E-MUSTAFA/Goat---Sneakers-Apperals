@@ -8,7 +8,7 @@
 
     <!-- Goat Logo ImageView -->
     <ImageView
-        android:id="@+id/ivGoatLogo"
+        android:id="@+id/ivGoatLogo1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/app_logo"
@@ -18,20 +18,20 @@
 
     <!-- Sign Up Title (Centered) -->
     <TextView
-        android:id="@+id/tvSignUpTitle"
+        android:id="@+id/tvSignUpTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up_title"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_below="@id/ivGoatLogo"
+        android:layout_below="@id/ivGoatLogo1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 
     <!-- Close Button -->
     <TextView
-        android:id="@+id/tvCloseButton"
+        android:id="@+id/tvCloseButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/close"
@@ -39,70 +39,70 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
         android:textSize="14sp"
-    android:padding="10dp"
-    android:clickable="true"/>
+        android:padding="10dp"
+        android:clickable="true"/>
 
     <!-- First & Last Name -->
     <EditText
-        android:id="@+id/etFirstLastName"
+        android:id="@+id/etFirstLastName1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-    android:hint="@string/first_last_name"
-    android:background="@android:color/transparent"
-    android:textColor="@android:color/black"
-    android:textColorHint="@android:color/darker_gray"
-    android:textSize="14sp"
-    android:inputType="textPersonName"
-    android:layout_below="@+id/tvSignUpTitle"
-    android:layout_marginTop="24dp"
-    android:paddingBottom="8dp"
-    android:singleLine="true"/>
+        android:hint="@string/first_last_name"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvSignUpTitle1"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        android:layout_below="@+id/etFirstLastName"
+        android:layout_below="@+id/etFirstLastName1"
         android:layout_marginTop="8dp"/>
 
     <!-- Email Address -->
     <EditText
-        android:id="@+id/etEmailAddress"
+        android:id="@+id/etEmailAddress1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-    android:hint="@string/email_address"
-    android:background="@android:color/transparent"
-    android:textColor="@android:color/black"
-    android:textColorHint="@android:color/darker_gray"
-    android:textSize="14sp"
-    android:inputType="textEmailAddress"
-    android:layout_below="@+id/etFirstLastName"
-    android:layout_marginTop="16dp"
-    android:paddingBottom="8dp"
-    android:singleLine="true"/>
+        android:hint="@string/email_address"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etFirstLastName1"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        android:layout_below="@+id/etEmailAddress"
+        android:layout_below="@+id/etEmailAddress1"
         android:layout_marginTop="8dp"/>
 
     <!-- Password (8+ Characters) -->
     <EditText
-        android:id="@+id/etPasswordField"
+        android:id="@+id/etPasswordField1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-    android:hint="@string/password"
-    android:background="@android:color/transparent"
-    android:textColor="@android:color/black"
-    android:textColorHint="@android:color/darker_gray"
-    android:textSize="14sp"
-    android:inputType="textPassword"
-    android:layout_below="@+id/etEmailAddress"
-    android:layout_marginTop="24dp"
-    android:paddingBottom="8dp"
-    android:singleLine="true"/>
+        android:hint="@string/password"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etEmailAddress1"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
 
     <!-- Show/Hide Password -->
 
@@ -110,7 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        android:layout_below="@+id/etPasswordField"
+        android:layout_below="@+id/etPasswordField1"
         android:layout_marginTop="8dp"/>
 
     <!-- Sign up for exclusive promos checkbox -->
@@ -121,7 +121,7 @@
         android:text="@string/promo_signup"
         android:textColor="@android:color/black"
         android:textSize="12sp"
-        android:layout_below="@+id/etPasswordField"
+        android:layout_below="@+id/etPasswordField1"
         android:layout_marginTop="16dp"/>
 
     <!-- Sign Up Button -->
@@ -136,12 +136,12 @@
         android:layout_margin="12dp"
         android:layout_marginBottom="16dp"
         android:padding="16dp"
-    android:layout_centerHorizontal="true"
-    style="@style/CustomButtonStyle"/>
+        android:layout_centerHorizontal="true"
+        style="@style/CustomButtonStyle"/>
 
     <!-- Privacy Policy and Terms of Service -->
     <TextView
-        android:id="@+id/tvPrivacyTerms"
+        android:id="@+id/tvPrivacyTerms1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/privacy_terms"
@@ -150,5 +150,15 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/btnSignUpAction"
         android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginRedirectText1"
+        android:text="Already an user? Login"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>

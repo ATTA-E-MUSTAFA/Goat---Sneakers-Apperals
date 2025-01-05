@@ -2,27 +2,53 @@ package com.guneet.goat_sneakersapparels
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
-class SignUpActivity : AppCompatActivity() {
+class SignupActivity:  AppCompatActivity() {
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signup_user)  // Set the content view to signup_user.xml
+        setContentView(R.layout.activity_signup) // Make sure the layout file is correctly set here
 
-        // Handle sign up button click (you can add actual signup functionality here)
-        val signUpButton = findViewById<Button>(R.id.btnSignUpAction)
-        signUpButton.setOnClickListener {
-            // Perform sign up logic (not implemented here)
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        // Find views by their IDs
+        val signupButton = findViewById<Button>(R.id.btnSignUpAction)
+        val emailInput = findViewById<EditText>(R.id.etEmailAddress1)
+        val passwordInput = findViewById<EditText>(R.id.etPasswordField1)
+//        val confirmPasswordInput = findViewById<EditText>(R.id.signupConfirm)
+        val loginRedirectText = findViewById<TextView>(R.id.loginRedirectText1)
+
+        signupButton.setOnClickListener {
+            val email = emailInput.text.toString()
+            val password = passwordInput.text.toString()
+//            val confirmPassword = confirmPasswordInput.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                    firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            val intent = Intent(this, MyLoginActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+
+        else {
+                Toast.makeText(this, "Fields cannot be empty", Toast.LENGTH_SHORT).show()
+            }
         }
 
-        // Handle "Close" button click to navigate back to the LoginActivity
-        val closeButton = findViewById<TextView>(R.id.tvCloseButton)
-        closeButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+        loginRedirectText.setOnClickListener {
+            val loginIntent = Intent(this, MyLoginActivity::class.java)
+            startActivity(loginIntent)
         }
     }
 }

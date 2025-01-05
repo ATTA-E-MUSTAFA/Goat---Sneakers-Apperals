@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- ImageView displaying the sneaker image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sneaker1"
+    android:contentDescription="Sneaker Image"
+    android:layout_marginBottom="8dp" />
+
+    <!-- ImageView displaying the apparel image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hp_img1"
+    android:contentDescription="Apparel Image"
+    android:layout_marginBottom="8dp" />
+
+    <!-- TextView for accessories content -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessories Content"
+        android:textSize="18sp"/>
+</LinearLayout>

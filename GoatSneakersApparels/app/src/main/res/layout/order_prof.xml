@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/back_arrow1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back_arrow"
+        android:contentDescription="Back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orders"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/back_arrow1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Search"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:background="@drawable/border_box"
+        android:padding="10dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+    <!-- Tab Layout -->
+    <LinearLayout
+        android:id="@+id/tab_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="16dp">
+
+        <!-- Purchased Tab -->
+        <TextView
+            android:id="@+id/tab_purchased1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchased"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Sold Tab -->
+        <TextView
+            android:id="@+id/tab_sold1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sold"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Line below Tabs -->
+    <View
+        android:id="@+id/tab_underline1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tab_layout1"
+        android:background="@android:color/black"
+        android:layout_marginTop="4dp" />
+
+    <!-- Content Layout Placeholder -->
+    <FrameLayout
+        android:id="@+id/content_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_underline1"
+        android:background="@android:color/white" />
+</RelativeLayout>

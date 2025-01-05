@@ -1,0 +1,318 @@
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@android:color/black">-->
+
+<!--    &lt;!&ndash; Top Text: Street Style | Paris Fashion Week &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/topTextContainer123"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:padding="16dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/titleText1234"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Street Style | Paris Fashion Week"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/viewAllText1234"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View All"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="14sp"-->
+<!--            android:gravity="end" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Images (HorizontalScrollView for fashion images) &ndash;&gt;-->
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/topTextContainer123"-->
+<!--        android:scrollbars="none"-->
+<!--        android:padding="16dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="300dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/hp_img1"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:contentDescription="Image of a street style fashion 1" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="300dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/hp_img2"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:contentDescription="Image of a street style fashion 2" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="300dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/hp_img3"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:contentDescription="Image of a street style fashion 3" />-->
+
+<!--        </LinearLayout>-->
+<!--    </HorizontalScrollView>-->
+
+<!--    &lt;!&ndash; Centered Text: STREET STYLE &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/streetStyleText1234"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="STREET STYLE"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/topTextContainer123"-->
+<!--        android:layout_marginTop="340dp" />-->
+<!--    <ImageView-->
+<!--        android:id="@+id/streetStyleImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/hp_img3"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:layout_below="@id/streetStyleText1234"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:contentDescription="Image of Street Style fashion" />-->
+<!--    &lt;!&ndash; Bottom Navigation &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bottomNav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@android:color/black"-->
+<!--        android:padding="10dp">-->
+
+<!--        &lt;!&ndash; Home Tab &ndash;&gt;-->
+<!--        <include-->
+<!--            layout="@layout/bottom_nav_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true" />-->
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top Text: Street Style | Paris Fashion Week -->
+        <LinearLayout
+            android:id="@+id/topTextContainer123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleText1234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Style | Paris Fashion Week"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/viewAllText1234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <!-- First HorizontalScrollView with Images -->
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topTextContainer123"
+            android:scrollbars="none"
+            android:padding="16dp">
+                <LinearLayout
+                    android:id="@+id/firstScrollLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Dynamic content will be added here programmatically -->
+                </LinearLayout>
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/hp_img1"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:contentDescription="Image of a street style fashion 1" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/hp_img2"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:contentDescription="Image of a street style fashion 2" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/hp_img3"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:contentDescription="Image of a street style fashion 3" />-->
+
+        </HorizontalScrollView>
+
+        <!-- Centered Text: STREET STYLE -->
+        <TextView
+            android:id="@+id/streetStyleText1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STREET STYLE"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/horizontalScrollView1"
+            android:layout_marginTop="16dp" />
+
+        <!-- Image Below the STREET STYLE Text -->
+        <ImageView
+            android:id="@+id/streetStyleImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hp_img3"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/streetStyleText1234"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Image of Street Style fashion" />
+
+        <!-- Top Text: Street Style | Paris Fashion Week -->
+        <LinearLayout
+            android:id="@+id/topTextContainer1234"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleText12345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Style | Paris Fashion Week"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/viewAllText12345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="end" />
+
+        </LinearLayout>
+        <!-- Second HorizontalScrollView with Images (Duplicated Content Below the Image) -->
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/streetStyleImage"
+            android:scrollbars="none"
+            android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/secondScrollLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Dynamic content will be added here programmatically -->
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/hp_img1"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:contentDescription="Image of a street style fashion 1" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/hp_img2"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:contentDescription="Image of a street style fashion 2" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/hp_img3"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:contentDescription="Image of a street style fashion 3" />-->
+<!--            </LinearLayout>-->
+        </HorizontalScrollView>
+
+        <!-- Bottom Navigation Bar fixed to the bottom -->
+        <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:padding="10dp">
+
+            <include
+                layout="@layout/bottom_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -63,6 +63,7 @@
 
                 <!-- Wants Text -->
                 <TextView
+                    android:id="@+id/wants_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -95,6 +96,7 @@
 
                 <!-- Offers Text -->
                 <TextView
+                    android:id="@+id/offers_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -127,6 +129,7 @@
 
                 <!-- Owns Text -->
                 <TextView
+                    android:id="@+id/owns_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -159,6 +162,7 @@
 
                 <!-- GOAT Storage Text -->
                 <TextView
+                    android:id="@+id/goat_storage_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -191,6 +195,7 @@
 
                 <!-- Inspiration Text -->
                 <TextView
+                    android:id="@+id/inspiration_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -223,6 +228,7 @@
 
                 <!-- Orders Text -->
                 <TextView
+                    android:id="@+id/orders_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -250,113 +256,10 @@
         android:background="@android:color/black">
 
         <!-- Home Button -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/home_icon"
-                android:contentDescription="Home"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="HOME"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
-
-        <!-- Styles Button -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/style"
-                android:contentDescription="Styles"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="STYLES"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
-
-        <!-- Search Button -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/search"
-                android:contentDescription="Search"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SEARCH"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
-
-        <!-- Sell Button -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/sell"
-                android:contentDescription="Sell"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SELL"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
-
-        <!-- Profile Button -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/profile"
-                android:contentDescription="Profile"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PROFILE"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"/>
-        </LinearLayout>
+        <include
+            layout="@layout/bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
     </LinearLayout>
 </RelativeLayout>

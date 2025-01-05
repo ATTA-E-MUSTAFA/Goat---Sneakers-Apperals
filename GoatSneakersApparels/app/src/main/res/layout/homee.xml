@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,6 @@
     android:background="@android:color/white"
     android:padding="16dp">
 
-    <!-- Scrollable content inside ScrollView -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,24 +24,13 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:padding="26dp"
                 android:elevation="4dp"
                 android:layout_alignParentTop="true">
 
-                <!-- Login Button aligned to the end -->
-                <Button
-                    android:id="@+id/loginButton"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:text="Login"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp"
-                    android:background="@android:color/black"
-                    android:layout_alignParentEnd="true" />
-
                 <!-- App Title aligned to start -->
                 <TextView
-                    android:id="@+id/appTitle"
+                    android:id="@+id/appTitle2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fashion Hub"
@@ -54,10 +43,10 @@
 
             <!-- HorizontalScrollView for the carousel -->
             <HorizontalScrollView
-                android:id="@+id/topCarousel"
+                android:id="@+id/topCarousel2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="26dp"
                 android:background="@android:color/white"
                 android:paddingTop="8dp"
                 android:scrollbars="none">
@@ -66,38 +55,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp">
+                    android:paddingStart="26dp"
+                    android:paddingEnd="26dp">
 
                     <!-- Carousel Text Items -->
                     <TextView
-                        android:id="@+id/tvBrowse"
+                        android:id="@+id/tvBrowse2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="24dp"
                         android:text="BROWSE"
                         android:textColor="@android:color/darker_gray"
-                        android:textSize="16sp"
+                        android:textSize="26sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/tvSkateExhibit"
+                        android:id="@+id/tvSkateExhibit2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="24dp"
                         android:text="SKATE EXHIBIT"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="26sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/tvCalendar"
+                        android:id="@+id/tvCalendar2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="24dp"
                         android:text="CALENDAR"
                         android:textColor="@android:color/darker_gray"
-                        android:textSize="16sp"
+                        android:textSize="26sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -106,7 +95,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="26dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
@@ -114,7 +103,7 @@
                 app:cardElevation="4dp">
 
                 <ImageView
-                    android:id="@+id/imgModels"
+                    android:id="@+id/imgModels2"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/apprel"
@@ -123,11 +112,11 @@
 
             <!-- Styled Section Link -->
             <LinearLayout
-                android:id="@+id/styleOption"
+                android:id="@+id/styleOption2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp"
+                android:padding="26dp"
                 android:gravity="center_vertical"
                 android:background="?attr/selectableItemBackground"
                 android:layout_marginTop="8dp">
@@ -135,9 +124,9 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:text="Discover Your Style"
-                    android:textSize="18sp"
+                    android:textSize="28sp"
                     android:textColor="@android:color/black"
                     android:textStyle="bold" />
 
@@ -159,7 +148,7 @@
                 app:cardElevation="4dp">
 
                 <ImageView
-                    android:id="@+id/imgSkateItems"
+                    android:id="@+id/imgSkateItems2"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/jacket"
@@ -176,10 +165,10 @@
                 app:cardElevation="4dp">
 
                 <ImageView
-                    android:id="@+id/additional_image_1"
+                    android:id="@+id/additional_image_22"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@drawable/hp_img1"
+                    android:src="@drawable/hp_img2"
                     android:scaleType="centerCrop" />
             </androidx.cardview.widget.CardView>
 

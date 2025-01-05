@@ -9,17 +9,17 @@
 
     <!-- Goat Logo ImageView -->
     <ImageView
-        android:id="@+id/ivGoatLogo3"
+        android:id="@+id/ivGoatLogo1"
         android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:src="@drawable/app_logo"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="40dp"
-    android:contentDescription="Goat logo"/>
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Goat logo"/>
 
     <!-- Close Button -->
     <TextView
-        android:id="@+id/tvClose3"
+        android:id="@+id/tvClose2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Close"
@@ -31,7 +31,7 @@
 
     <!-- Log In Title -->
     <TextView
-        android:id="@+id/tvLogin3"
+        android:id="@+id/tvLogin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
@@ -39,12 +39,12 @@
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/ivGoatLogo3"
-    android:layout_marginTop="20dp"/>
+        android:layout_below="@id/ivGoatLogo1"
+        android:layout_marginTop="20dp"/>
 
     <!-- Email or Username -->
     <EditText
-        android:id="@+id/etEmailUsername3"
+        android:id="@+id/etEmailUsername2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email or Username"
@@ -52,21 +52,21 @@
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="24sp"
-    android:inputType="textEmailAddress"
-    android:layout_below="@id/tvLogin3"
-    android:layout_marginTop="50dp"
-    android:layout_marginBottom="16dp"
-    android:paddingBottom="8dp"
-    android:singleLine="true"/>
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/tvLogin2"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        android:layout_below="@id/etEmailUsername3"/>
+        android:layout_below="@id/etEmailUsername2"/>
 
     <!-- Password -->
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPassword2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -75,7 +75,7 @@
         android:textColorHint="@android:color/darker_gray"
         android:textSize="24sp"
         android:inputType="textPassword"
-        android:layout_below="@id/etEmailUsername3"
+        android:layout_below="@id/etEmailUsername2"
         android:layout_marginTop="24dp"
         android:paddingBottom="8dp"
         android:singleLine="true"/>
@@ -84,35 +84,35 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black"
-        android:layout_below="@id/etPassword"/>
+        android:layout_below="@id/etPassword2"/>
 
     <!-- Forgot Password -->
     <TextView
-        android:id="@+id/tvForgotPassword3"
+        android:id="@+id/tvForgotPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot?"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/etPassword"
+        android:layout_below="@id/etPassword2"
         android:layout_marginTop="10dp"/>
 
     <!-- Privacy Policy and Terms of Service -->
     <TextView
-        android:id="@+id/tvPolicy3"
+        android:id="@+id/tvPolicy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="By proceeding, you agree to the Privacy Policy and Terms of Service"
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/tvForgotPassword3"
+        android:layout_below="@id/tvForgotPassword2"
         android:layout_marginTop="32dp"/>
 
     <!-- Log In Button -->
     <Button
-        android:id="@+id/btnLogin3"
+        android:id="@+id/btnLogin2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOG IN"
@@ -120,18 +120,28 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="@android:color/black"
         android:textColor="@android:color/white"
-        android:layout_below="@id/tvPolicy3"
+        android:layout_below="@id/tvPolicy"
         android:layout_marginBottom="24dp"/>
 
     <!-- Sign Up Text -->
     <TextView
-        android:id="@+id/tvSignUp3"
+        android:id="@+id/tvSignUp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/btnLogin3"/>
+        android:layout_below="@id/btnLogin2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupRedirectText"
+        android:text="Not yet registered? Signup"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="14dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>
